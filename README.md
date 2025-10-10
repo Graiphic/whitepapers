@@ -109,6 +109,16 @@ The **Graiphic Whitepaper Series** aims to:
 
 ---
 
+## 💡 Support & Collaboration
+
+If you like what we do, you can help us grow by **sharing our work**, **following our channels**, and **reaching out for collaboration**.  
+Graiphic welcomes partnerships, industrial and academic exchanges, and all initiatives that push the boundaries of **graph-based AI, energy-aware computing, and sovereign technology**.
+
+Together, we can accelerate the transition toward **open, explainable, and hardware-independent intelligence**.  
+Graiphic turns opportunities into innovation — and innovation into impact.
+
+---
+
 ## 🪪 License
 All documents and images are released under **CC BY-NC-SA 4.0**.  
 © 2025 Graiphic — [graiphic.io](https://www.graiphic.io)
