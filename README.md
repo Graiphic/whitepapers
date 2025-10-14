@@ -60,8 +60,8 @@ Graiphic operates in the **disruptive zone** — where AI becomes deployable, au
 ---
 
 ### **2. Toolkit Performance & Compiler Benchmark (v1.0 – upcoming)**
-Benchmark comparing **Graiphic toolkits** (Accelerator & CUDA) vs **Ngene CuLab**, **G²CPU**, and **native LabVIEW**:  
-performance (CPU/GPU), compiler behavior, memory efficiency, ergonomics, coverage, limitations.
+Benchmark comparing **Graiphic toolkit** (Accelerator) vs **Ngene CuLab**, **G²CPU**, and **native LabVIEW**:  
+performance (CPU), compiler behavior, memory efficiency, ergonomics, coverage, limitations.
 
 ---
 
