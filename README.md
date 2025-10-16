@@ -58,18 +58,35 @@ Graiphic operates in the **disruptive zone** — where AI becomes deployable, au
 **File:** [`GO-HW_Whitepaper_1.3.pdf`](./GO%20HW%20%E2%80%94%20From%20Models%20to%20Systems/GO-HW_Whitepaper_1.3.pdf)
 
 ---
+---
 
 ### **2. Benchmarking the Future: Comparing LabVIEW GPU Toolkits — CuLab, G²CPU, and the Graiphic Accelerator (v1.0)**
 **Theme:** Performance comparison of LabVIEW GPU acceleration frameworks  
 **Summary:**  
 This study evaluates the **Graiphic Accelerator Toolkit** against **CuLab** and **G²CPU**, measuring computational throughput, memory efficiency, and runtime determinism under identical LabVIEW test environments.  
-The benchmark covers **four workloads** — GEMM, arithmetic loops, complex number computation, and signal processing — and highlights Graiphic’s **compiled ONNX graph execution** advantage versus DLL-based frameworks.
+The benchmark covers **four workloads** — **GEMM**, **Arithmetic**, **Complex Number Computation**, and **Signal Processing** — and highlights Graiphic’s **compiled ONNX graph execution** advantage versus DLL-based frameworks.
 
 <p align="center">
   <img src="./img/Benchmarking_Whitepaper.PNG" alt="Benchmarking Whitepaper Cover" width="600"/>
 </p>
 
 **File:** [`Benchmarking_the_Future_1.0.pdf`](./Benchmarking%20LabVIEW%20GPU%20Toolkits%20CuLab%2C%20G2CPU%2C%20and%20the%20Graiphic%20Accelerator/Benchmarking%20the%20Future%20Comparing%20LabVIEW%20GPU%20Toolkits%20CuLab%2C%20G2CPU%2C%20and%20the%20Graiphic%20Accelerator.1.0.pdf)
+
+#### 🧪 Source Materials and Reproducibility
+All **LabVIEW source files** used to generate this whitepaper’s results are publicly available to ensure **transparency and reproducibility**.  
+You can access them here:  
+👉 [`/Benchmarking LabVIEW GPU Toolkits CuLab, G2CPU, and the Graiphic Accelerator/Source`](./Benchmarking%20LabVIEW%20GPU%20Toolkits%20CuLab%2C%20G2CPU%2C%20and%20the%20Graiphic%20Accelerator/Source)
+
+This directory contains the **exact VIs and datasets** for the four benchmark cases described in the document:
+
+| Benchmark | Folder | Description |
+|------------|---------|-------------|
+| 🧮 GEMM | [`Source/GEMM`](./Benchmarking%20LabVIEW%20GPU%20Toolkits%20CuLab%2C%20G2CPU%2C%20and%20the%20Graiphic%20Accelerator/Source/GEMM) | Matrix multiplication and memory throughput test |
+| ➕ Arithmetic | [`Source/Not Complex`](./Benchmarking%20LabVIEW%20GPU%20Toolkits%20CuLab%2C%20G2CPU%2C%20and%20the%20Graiphic%20Accelerator/Source/Not%20Complex) | Scalar and vector arithmetic operations |
+| 🔢 Complex | [`Source/Complex`](./Benchmarking%20LabVIEW%20GPU%20Toolkits%20CuLab%2C%20G2CPU%2C%20and%20the%20Graiphic%20Accelerator/Source/Complex) | Complex-number computation benchmark |
+| 📈 Signal Processing | [`Source/Signal Processing Without Indicator And Warmup`](./Benchmarking%20LabVIEW%20GPU%20Toolkits%20CuLab%2C%20G2CPU%2C%20and%20the%20Graiphic%20Accelerator/Source/Signal%20Processing%20Without%20Indicator%20And%20Warmup) | FFT and arithmetic processing pipeline on sensor data |
+
+Together, these resources make the whitepaper a **fully reproducible benchmark suite**, open to independent validation and community extensions.
 
 ---
 
