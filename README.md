@@ -59,9 +59,17 @@ Graiphic operates in the **disruptive zone** — where AI becomes deployable, au
 
 ---
 
-### **2. Toolkit Performance & Compiler Benchmark (v1.0 – upcoming)**
-Benchmark comparing **Graiphic toolkit** (Accelerator) vs **Ngene CuLab**, **G²CPU**, and **native LabVIEW**:  
-performance (CPU), compiler behavior, memory efficiency, ergonomics, coverage, limitations.
+### **2. Benchmarking the Future: Comparing LabVIEW GPU Toolkits — CuLab, G²CPU, and the Graiphic Accelerator (v1.0)**
+**Theme:** Performance comparison of LabVIEW GPU acceleration frameworks  
+**Summary:**  
+This study evaluates the **Graiphic Accelerator Toolkit** against **CuLab** and **G²CPU**, measuring computational throughput, memory efficiency, and runtime determinism under identical LabVIEW test environments.  
+The benchmark covers **four workloads** — GEMM, arithmetic loops, complex number computation, and signal processing — and highlights Graiphic’s **compiled ONNX graph execution** advantage versus DLL-based frameworks.
+
+<p align="center">
+  <img src="./img/Benchmarking_Whitepaper.PNG" alt="Benchmarking Whitepaper Cover" width="600"/>
+</p>
+
+**File:** [`Benchmarking_the_Future_1.0.pdf`](./Benchmarking%20LabVIEW%20GPU%20Toolkits%20CuLab%2C%20G2CPU%2C%20and%20the%20Graiphic%20Accelerator/Benchmarking%20the%20Future%20Comparing%20LabVIEW%20GPU%20Toolkits%20CuLab%2C%20G2CPU%2C%20and%20the%20Graiphic%20Accelerator.1.0.pdf)
 
 ---
 
