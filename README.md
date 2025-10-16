@@ -55,7 +55,7 @@ Graiphic operates in the **disruptive zone** — where AI becomes deployable, au
   <img src="./img/GO-HW_Whitepaper.PNG" alt="GO HW Cover" width="600"/>
 </p>
 
-**File:** [`GO-HW_Whitepaper_1.3.pdf`](./doc/GO-HW_Whitepaper_1.3.pdf)
+**File:** [`GO-HW_Whitepaper_1.3.pdf`](./GO HW — From Models to Systems/GO-HW_Whitepaper_1.3.pdf)
 
 ---
 
