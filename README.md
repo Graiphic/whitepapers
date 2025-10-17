@@ -58,7 +58,6 @@ Graiphic operates in the **disruptive zone** — where AI becomes deployable, au
 **File:** [`GO-HW_Whitepaper_1.3.pdf`](./GO%20HW%20%E2%80%94%20From%20Models%20to%20Systems/GO-HW_Whitepaper_1.3.pdf)
 
 ---
----
 
 ### **2. Benchmarking the Future: Comparing LabVIEW GPU Toolkits — CuLab, G²CPU, and the Graiphic Accelerator (v1.0)**
 **Theme:** Performance comparison of LabVIEW GPU acceleration frameworks  
