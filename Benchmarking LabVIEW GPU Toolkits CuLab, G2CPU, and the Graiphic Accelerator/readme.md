@@ -123,3 +123,26 @@ Our technology, **GO HW (Graph Orchestration Hardware)**, enables a universal, h
 |----------|------|--------|-------------|
 | **1.0** | 2025-10-15 | Youssef Menjour (Graiphic) | First release of benchmarking whitepaper and LabVIEW sources |
 
+---
+
+## 🧮 Towards a Community Standard: LabVIEW Open Benchmark Suite (LOBS)
+
+Following this first Graiphic benchmark, we’ve launched the  
+**[LabVIEW Open Benchmark Suite (LOBS)](./LabVIEW%20Open%20Benchmark%20Suite)** —  
+a collaborative initiative inspired by **SPEC** and **MLPerf**, aimed at building  
+a **shared, reproducible standard** for LabVIEW performance evaluation.
+
+LOBS extends this initial study by providing:
+- 🧠 **Open-source, vendor-neutral test cases** (FFT, GEMM, AI, etc.)  
+- 🔁 **Reproducible pipelines** anyone can execute and extend  
+- 📊 **Transparent comparison criteria** (time, precision, energy, determinism)  
+
+If you want to replicate or contribute to the next wave of open benchmarks,  
+👉 start here: [**LabVIEW Open Benchmark Suite →**](./LabVIEW%20Open%20Benchmark%20Suite)
+
+> This whitepaper is the **Reference 0** of the suite —  
+> the foundation on which all future community benchmarks will build.
+
+---
+
+
