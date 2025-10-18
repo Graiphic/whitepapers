@@ -32,7 +32,7 @@ The objective is to provide a **real-world comparison** and understand the trade
 | **LabVIEW** | 2025 Q3 |
 | **CUDA** | 12.9 |
 | **TensorRT** | 10.13.3.9 |
-| **Date** | October 15, 2025 |
+| **Date** | October 15 2025 |
 
 This setup represents a balanced workstation configuration for reproducible LabVIEW GPU benchmarks.
 
@@ -47,7 +47,8 @@ This setup represents a balanced workstation configuration for reproducible LabV
 3. **Complex Number Computation**  
    Handling of real + imaginary tensors using ONNX custom nodes.  
 4. **Signal Processing Application**  
-   FFT + arithmetic operations on real sensor-like data.
+   FFT + arithmetic operations on **real NI-like signal data (≈ 32 k samples)**.  
+   ➤ Designed intentionally to reflect *real sensor workloads* where CPU and GPU performance can converge due to small batch sizes.
 
 Each test compares CPU vs GPU execution using CuLab, G2CPU, and Graiphic Accelerator Toolkit (CUDA + TensorRT).
 
@@ -55,16 +56,24 @@ Each test compares CPU vs GPU execution using CuLab, G2CPU, and Graiphic Acceler
 
 ## 🧠 Key Findings
 
-- **Graiphic Accelerator (TensorRT)** achieves the **highest performance**, up to:  
+- **Graiphic Accelerator (TensorRT)** delivers the **highest overall performance**, reaching up to:  
   - ⚡ **5× faster than CuLab**  
-  - ⚡ **40× faster than G2CPU**
+  - ⚡ **40× faster than G2CPU**  
 
-- **Compiled graph execution (ONNX Runtime)** drastically outperforms  
-  **per-node DLL execution** used by other toolkits.
+- **Compiled-graph execution (ONNX Runtime)** eliminates the per-node overhead seen in **DLL-based** toolkits.
 
-- Even with **non-optimized complex number operations**, Graiphic remains robust.
+- **Complex-number computation** remains an open research area; Graiphic implements a custom ONNX workaround, fully functional but not yet optimized.
 
-- For small data blocks (e.g., 32 k samples), **LabVIEW CPU** stays competitive — GPU acceleration shines mostly on larger workloads.
+- On **small data blocks** (~32 k samples), **LabVIEW CPU** remains competitive — illustrating how initialization latency can dominate over GPU throughput at small scales.  
+  ➤ On **larger workloads**, GPU acceleration shows its full advantage.
+
+---
+
+## 📊 Methodological Notes
+
+- All Y-axes in figures represent **execution time in seconds** — where **lower = better**.  
+- Each measurement was repeated multiple times to reduce jitter and variance.  
+- The intention is not to claim “absolute” speed dominance, but to provide **transparent, reproducible data** enabling fair comparison and discussion.
 
 ---
 
@@ -75,7 +84,7 @@ All LabVIEW VIs used to generate the benchmark results are available in the
 
 | Benchmark | Folder | Description |
 |------------|---------|-------------|
-| **GEMM** | [Source/GEMM](./Source/GEMM) | Matrix multiplication tests |
+| **GEMM** | [Source/GEMM](./Source/GEMM) | Matrix-multiplication tests |
 | **Arithmetic** | [Source/Not Complex](./Source/Not%20Complex) | Scalar & vector operations |
 | **Complex** | [Source/Complex](./Source/Complex) | Custom complex-number computation |
 | **Signal Processing** | [Source/Signal Processing Without Indicator And Warmup](./Source/Signal%20Processing%20Without%20Indicator%20And%20Warmup) | FFT-based signal test |
@@ -88,10 +97,17 @@ All LabVIEW VIs used to generate the benchmark results are available in the
 
 ---
 
-## 🔬 Data & Reproducibility
+## 🔬 Replication & Discussion
 
-All materials (benchmarks, datasets, LabVIEW projects) are **publicly available** to ensure transparency and reproducibility.  
-You can freely clone the repository and rerun the tests.
+This repository is meant for **open scientific dialogue**.  
+All VIs, datasets, and configurations are public to enable independent replication.
+
+We encourage developers and researchers to:
+- rerun the benchmarks under different hardware or toolkit versions,  
+- share comparative results through pull requests or discussions,  
+- and help refine the test suite for future versions.
+
+> Benchmarking is not about competition — it’s about understanding *why* systems behave differently.
 
 📁 Repository → [https://github.com/Graiphic/whitepapers](https://github.com/Graiphic/whitepapers)
 
@@ -103,8 +119,8 @@ You can freely clone the repository and rerun the tests.
 Our technology, **GO HW (Graph Orchestration Hardware)**, enables a universal, hardware-agnostic execution layer bridging **ONNX Runtime**, **MLIR**, and **LabVIEW**.
 
 ### 📬 Get in Touch
-- 💡 Funding & Partnerships: [funding@graiphic.io](mailto:funding@graiphic.io)  
-- 🌐 Website: [www.graiphic.io](https://www.graiphic.io)
+- 💡 Funding & Partnerships → [contact@graiphic.io](mailto:funding@graiphic.io)  
+- 🌐 Website → [www.graiphic.io](https://www.graiphic.io)
 
 ---
 
@@ -112,4 +128,5 @@ Our technology, **GO HW (Graph Orchestration Hardware)**, enables a universal, h
 
 | Version | Date | Author | Description |
 |----------|------|--------|-------------|
-| **1.0** | 2025-10-15 | Youssef Menjour (Graiphic) | F
+| **1.0** | 2025-10-15 | Youssef Menjour (Graiphic) | First release of benchmarking whitepaper and LabVIEW sources |
+| **1.1** | 2025-10-18 | Graiphic Team | Clarified methodology + added Replication & Discussion section |
