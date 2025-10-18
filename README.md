@@ -74,7 +74,7 @@ The benchmark covers **four workloads** — **GEMM**, **Arithmetic**, **Complex 
 #### 🧪 Source Materials and Reproducibility
 All **LabVIEW source files** used to generate this whitepaper’s results are publicly available to ensure **transparency and reproducibility**.  
 You can access them here:  
-👉 [`/Benchmarking LabVIEW GPU Toolkits CuLab, G2CPU, and the Graiphic Accelerator/Source`](./Benchmarking%20LabVIEW%20GPU%20Toolkits%20CuLab%2C%20G2CPU%2C%20and%20the%20Graiphic%20Accelerator/Source)
+👉 [`/Benchmarking LabVIEW GPU Toolkits CuLab, G2CPU, and the Graiphic Accelerator`](./Benchmarking%20LabVIEW%20GPU%20Toolkits%20CuLab%2C%20G2CPU%2C%20and%20the%20Graiphic%20Accelerator)
 
 This directory contains the **exact VIs and datasets** for the four benchmark cases described in the document:
 
