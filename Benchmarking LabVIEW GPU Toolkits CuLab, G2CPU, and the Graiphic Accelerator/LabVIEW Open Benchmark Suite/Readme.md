@@ -99,11 +99,10 @@ All reproducible submissions will be cited in future versions of the benchmark r
 | Name | Organization | Role |
 |------|---------------|------|
 | **Graiphic** | France | Founder & Core Maintainer |
-| **Ross Smith** | Community Lead | Concept validation (SPEC-style model) |
 | **Open contributors** | – | Replication, validation, extensions |
 
 If your organization wants to join as a co-maintainer or reviewer, please contact:  
-📧 [benchmark@graiphic.io](mailto:benchmark@graiphic.io)
+📧 [benchmark@graiphic.io](mailto:contact@graiphic.io)
 
 ---
 
@@ -122,3 +121,4 @@ All contents of LOBS are released under the **MIT License** for maximum openness
 
 **© 2025 Graiphic — LabVIEW Open Benchmark Suite (LOBS)**  
 Part of the Graiphic Open Science initiative.
+
